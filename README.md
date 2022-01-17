@@ -4,17 +4,11 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ## Table of contents
 
-- [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ### The challenge
 
@@ -24,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click Here!](https://your-solution-url.com)
-- Live Site URL: [Click Here!](https://your-live-site-url.com)
+- Solution URL: [Click Here!](https://github.com/BS-Joy/fm-Four-card-feature-section/tree/gh-pages)
+- Live Site URL: [Click Here!](https://bs-joy.github.io/fm-Four-card-feature-section/)
 
 ### Built with
 
