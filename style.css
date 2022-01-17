@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);;
+    --GrayishBlue: hsl(229, 6%, 66%);  
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --boxShadow: hsl(218, 43%, 46%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--VeryLightGray);
+}
+
+.container {
+    margin: 50px 170px;
+}
+
+/* top-banner css */
+
+.top-banner {
+    max-width: 35em;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.light, .bold {
+    color: var(--VeryDarkBlue);
+    font-size: 2rem;
+}
+
+.light {
+    font-weight: 200;
+}
+
+.bold {
+    color: var(--VeryDarkBlue);
+}
+
+.top-banner p {
+    font-size: 15px;
+    color: var(--GrayishBlue);
+    padding: 20px 10px;
+}
+
+/* grid css */
+
+.card {
+    min-width: 200px;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0px 15px 20px -6px hsla(218, 43%, 46%, 0.2);
+}
+
+.card h2 {
+    color: var(--VeryDarkBlue);
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: var(--GrayishBlue);
+    font-size: 13px;
+    background-color: var(--VeryLightGray);
+}
+
+.feature-cards {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-content: center;
+    align-content: center;
+}
+
+.card-1 {
+    border-top: 4px solid var(--Cyan);
+    grid-row: 2 / span 2;
+}
+
+.card-2 {
+    border-top: 4px solid var(--Red);
+    grid-column-start: 2;
+    grid-row: 1 / span 2;
+}
+
+.card-3 {
+    border-top: 4px solid var(--Orange);
+    grid-column-start: 2;
+    grid-row: 3 / span 2;
+}
+
+.card-4 {
+    border-top: 4px solid var(--Blue);
+    grid-column-start: 3;
+    grid-row: 2 / span 2;
+}
+
+.card-img {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+@media (max-width: 768px) {
+    .top-banner {
+        width: 30em;
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        margin: 60px 25px;
+    }
+
+    .top-banner {
+        width: 100%;
+    }
+
+    .light, .bold {
+        font-size: 1.5rem;
+    }
+
+    .feature-cards {
+        display: flex;
+        flex-direction: column;
+    }
+}
